@@ -9,6 +9,7 @@ Fluxo de requisição de acesso
  * S3 (Simples Storage Service)- Serviço de armazenamento de objetos, guardar arquivos de forma definitiva e acessa-los de forma simples.(arquivos, imagens, vídeos, etc). 
 
  A arquitetura está exemplificada no seguindo diagrama:
-<img width="2965" height="2630" alt="image" src="https://github.com/user-attachments/assets/4b64987b-e160-4dfb-b417-d5f3ff6b3459" />
+<img width="820" height="594" alt="image" src="https://github.com/user-attachments/assets/be847aaf-dd48-490c-bb9d-e53df063c9f8" />
+
 
 
