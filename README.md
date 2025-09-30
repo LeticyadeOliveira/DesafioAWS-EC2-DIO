@@ -12,7 +12,7 @@ Esse repositório tem como objetivo consolidar os meus conhecimentos em gerencia
 #### A arquitetura está exemplificada no seguindo diagrama:
 ![Diagrama EC2](images/diagrama-ec2.png)
 
-###Fluxo de dados | Contextualização 
+### Fluxo de dados | Contextualização 
  Se o usuário acessa o web site hospedado no EC2 e faz upload de um aqruivo (foto, vídeo, print, etc), ele será armazenado no S3. Caso o sistema tenha que salvar informações novas ou até iniciais do cadastro desse usuário, isso vai para O RDS. Já o EBS é responsável por armazenar os arquivos temporários e de configurações da instância EC2.
 
 
