@@ -27,7 +27,7 @@ Esse fluxo mostra como funciona a atualização de uma foto de perfil usando ser
 
 #### A arquitetura está exemplificada no diagrama a seguir: 
 
- ![Diagrama S3](images/diagrama-S3.png).
+ ![Diagrama S3](images/diagrama-s3.png).
 
   ### Contextualização 
  1. O usuário envia uma nova foto de perfil.  
