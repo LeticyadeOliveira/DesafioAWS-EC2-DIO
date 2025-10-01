@@ -18,18 +18,22 @@ Esse repositório tem como objetivo consolidar os meus conhecimentos em gerencia
    Se o usuário acessa o web site hospedado no EC2 e faz upload de um aqruivo (foto, vídeo, print, etc), ele será armazenado no S3. Caso o sistema tenha que salvar informações novas ou até iniciais do cadastro desse usuário, isso vai para O RDS. Já o EBS é responsável por armazenar os arquivos temporários e de configurações da instância EC2.
 
 
-## Fluxo de atualização de perfil de usuário com S3, Lambda e Dynamo DB.
- O diagrama abaixo representa uma aplicação web hospedada em uma instância EC2 que interage com outros serviços da AWS, que são eles: 
+## Fluxo de atualização de perfil de usuário com S3, Lambda e Dynamo DB. 
+Esse fluxo mostra como funciona a atualização de uma foto de perfil usando serviços da AWS:  
 
- **S3** - Armazenamento de objetos, uma forma de guardar e acessar arquivos de forma simples.
- 
- **Lambda** - Um serviço sem servidor da AWS que executa um código em resposta a eventos e a AWS fica responsável por gerenciar as coisas. O utilizador só fornece a função.
- 
- **Dynamo DB** - Banco de dados NoSQL serverless.
+- **S3 (Simple Storage Service)** - É umServiço de **armazenamento de objetos**, usado para guardar e acessar arquivos com mais facilidade. 
+- **Lambda AWS** - Serviço de **computação sem servidor (serverless)**. Executa código automaticamente em resposta a eventos, sem precisar gerenciar servidores.  
+- **Amazon DynamoDB** → **Banco de dados NoSQL** que é gerenciado pela AWS. Escalável e rápido para salvar e consultar informações.  
 
 #### A arquitetura está exemplificada no diagrama a seguir: 
 
  ![Diagrama S3](images/diagrama-S3.png).
+
+  ### Contextualização 
+ 1. O usuário envia uma nova foto de perfil.  
+ 2. A imagem é salva no **S3**.  
+ 3. O envio dispara uma função **Lambda**, que processa a imagem (por exemplo: validar e registrar o evento).  
+ 4. Os detalhes da imagem (metadados, como nome do arquivo e data do upload) são armazenados no **DynamoDB**.  
 
 
 
