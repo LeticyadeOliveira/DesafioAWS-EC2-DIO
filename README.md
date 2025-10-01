@@ -22,8 +22,11 @@ Esse repositório tem como objetivo consolidar os meus conhecimentos em gerencia
  O diagrama abaixo representa uma aplicação web hospedada em uma instância EC2 que interage com outros serviços da AWS, que são eles: 
 
  **S3** - Armazenamento de objetos, uma forma de guardar e acessar arquivos de forma simples.
+ 
  **Lambda** - Um serviço sem servidor da AWS que executa um código em resposta a eventos e a AWS fica responsável por gerenciar as coisas. O utilizador só fornece a função.
  **Dynamo DB** - Banco de dados NoSQL serverless.
+
+ 
 
 
 
