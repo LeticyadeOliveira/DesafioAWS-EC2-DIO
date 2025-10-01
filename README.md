@@ -6,7 +6,9 @@ Esse repositório tem como objetivo consolidar os meus conhecimentos em gerencia
  O diagrama abaixo representa uma aplicação web hospedada em uma instância EC2 (Elastic Compute Cloud) do tipo IAAS (infraestutura como serviço), que interage com diferentes serviços de armazenamento e banco de dados da AWS:
  
 **EBS (Elastic Block Store)**- Serviço para oferecer armazenamento em blocos, funciona como volumes ou discos rígidos para a instância EC2.
+
 **RDS**(Relational Database service) - Serviço gerenciado de banco de daods relacional, um tipo de "EC2 especializado".
+
 **S3**(Simples Storage Service)- Serviço de armazenamento de objetos, guardar arquivos de forma definitiva e acessa-los de forma simples.(arquivos, imagens, vídeos, etc). 
 
 #### A arquitetura está exemplificada no seguindo diagrama:
