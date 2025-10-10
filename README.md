@@ -3,7 +3,7 @@ Esse repositório tem como objetivo consolidar os meus conhecimentos em gerencia
 
 ## ➤ Fluxo de requisição de acesso com EC2, EBS, RDS e S3.
 
- O diagrama abaixo representa uma aplicação web hospedada em uma instância EC2 (Elastic Compute Cloud) do tipo IAAS (infraestutura como serviço), que interage com diferentes serviços de armazenamento e banco de dados da AWS:
+ O diagrama abaixo representa uma aplicação web hospedada em uma **instância EC2** (Elastic Compute Cloud) do tipo IAAS (infraestutura como serviço), que interage com diferentes serviços de armazenamento e banco de dados da AWS:
  
  - **EBS (Elastic Block Store)** - Serviço para oferecer armazenamento em blocos, funciona como volumes ou discos rígidos para a instância EC2.
 
@@ -14,7 +14,7 @@ Esse repositório tem como objetivo consolidar os meus conhecimentos em gerencia
 #### A arquitetura está exemplificada no seguindo diagrama:
 ![Diagrama EC2](images/diagrama-ec2.png)
 
- ### Fluxo de dados | Contextualização 
+ ### Explicação
    Se o usuário acessa o web site hospedado no EC2 e faz upload de um aqruivo (foto, vídeo, print, etc), ele será armazenado no S3. Caso o sistema tenha que salvar informações novas ou até iniciais do cadastro desse usuário, isso vai para o RDS. Já o EBS é responsável por armazenar os arquivos temporários e de configurações da instância EC2.
 
 
@@ -22,7 +22,7 @@ Esse repositório tem como objetivo consolidar os meus conhecimentos em gerencia
 Esse fluxo mostra como funciona a atualização de uma foto de perfil usando serviços da AWS:  
 
 - **S3 (Simple Storage Service)** - É um serviço de **armazenamento de objetos**, usado para guardar e acessar arquivos com mais facilidade. 
-- **Lambda AWS** - Serviço de **computação sem servidor (serverless)**. Executa códigos automaticamente em resposta a eventos, sem precisar gerenciar servidores.  
+- **Lambda AWS** - Serviço de **computação sem servidor (serverless)**. Executa códigos automaticamente em resposta a eventos(triggers), sem precisar gerenciar servidores.  
 - **Amazon DynamoDB** → **Banco de dados NoSQL** que é gerenciado pela AWS. Escalável e rápido para salvar e consultar informações.  
 
 #### A arquitetura está exemplificada no diagrama a seguir: 
