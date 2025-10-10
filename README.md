@@ -47,7 +47,7 @@ Um e-commerce, naturalmente, precisa lidar com diferentes demandas. Com isso em 
 Para que possamos entender o sistema, funciona da seguinte forma:
 
 A solução  foi implementada na region **us-east-1 (Vírginia)** e segue o modelo de 3 camadas(Web, aplicação e Banco de dados).
-   1. O úsuario realiza uma requisição pela internet.
+   1. O Usuário realiza uma requisição pela internet.
    2. O tráfego entra pela **VPC**(Virtual Private Cloud) atráves do **Internet Gateway**.
    3. O **Load Balancer**, localizado numa sub-rede pública distribui as requisições entre múltiplas instâncias **EC2**.
    4. As **instâncias**, em uma sub-rede privada, **processam** a lógica do e-commerce e se conectam ao bando de dados **RDS** para consultar e armazenar informações.
@@ -75,7 +75,8 @@ A solução  foi implementada na region **us-east-1 (Vírginia)** e segue o mode
 ### Considerações finais
 Entendo a partir desse projeto que ainda há muito o que evoluir, um sistema de e-commerce real é bem mais complexo do que o que eu consegui representar aqui. Mas eu pretendo continuar melhorando e estudando para expandir esse projeto futuramente! :)
 
-(**Referências:**
+**Referências:**
 - **Documentação Oficial AWS:**
-[https://aws.amazon.com/pt/elasticloadbalancing/](https://aws.amazon.com/pt/elasticloadbalancing/)[Documentação sobre instâncias EC2 AWS](https://docs.aws.amazon.com/pt_br/toolkit-for-visual-studio/latest/user-guide/tkv-ec2-ami.html)
+[Documentação AWS](https://aws.amazon.com/pt/elasticloadbalancing/)
+[Documentação sobre instâncias EC2 AWS](https://docs.aws.amazon.com/pt_br/toolkit-for-visual-studio/latest/user-guide/tkv-ec2-ami.html)
 
